@@ -8,6 +8,8 @@ To work with the Twitter API, read the documentation on creating a Twitter App(n
 
 To activate sending messages in telegram, you need to create a bot via BotFather, add a bot to the telegram channel of the bot and make it an administrator. To find out the telegram ID of the channel, you need to forward a message from the channel to https://t.me/get_myidbot (note - the channel ID starts from -100)
 
+The run rules are designed to check whether you are using this social network or telegram channel
+
  ![изображение](https://github.com/evembar/replycator/assets/78268817/44332a8e-2ad3-4337-905d-e1f0d28ccf96)
 ![изображение](https://github.com/evembar/replycator/assets/78268817/053fd559-3283-4a27-a336-dcde7b485fa9) 
 ![изображение](https://github.com/evembar/replycator/assets/78268817/2d7e78ce-094b-42a6-a4a4-4af892ce2af6)
