@@ -10,6 +10,8 @@ To activate sending messages in telegram, you need to create a bot via BotFather
 
 The run rules are designed to check whether you are using this social network or telegram channel
 
+To create a post with files and text, you need to write messages and send files to the bot's personal chat. You can use /help to find out the purpose of the commands
+
  ![изображение](https://github.com/evembar/replycator/assets/78268817/44332a8e-2ad3-4337-905d-e1f0d28ccf96)
 ![изображение](https://github.com/evembar/replycator/assets/78268817/053fd559-3283-4a27-a336-dcde7b485fa9) 
 ![изображение](https://github.com/evembar/replycator/assets/78268817/2d7e78ce-094b-42a6-a4a4-4af892ce2af6)
