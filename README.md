@@ -3,3 +3,5 @@ A program for publishing files and messages to different social networks in one 
 
 Requirements: Linux/Macos - the gtk2, pip and tcl/tk library must be installed (For some gnu-linux distributions, a separate installation of the python-tkinter package will be required)
 Windows - installed python 3.8 and higher
+
+![изображение](https://github.com/evembar/replycator/assets/78268817/44332a8e-2ad3-4337-905d-e1f0d28ccf96)
