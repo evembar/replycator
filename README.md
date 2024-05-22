@@ -4,7 +4,7 @@ A program for publishing files and messages to different social networks in one 
 Requirements: Linux/Macos - the gtk2, pip and tcl/tk library must be installed (For some gnu-linux distributions, a separate installation of the python-tkinter package will be required)
 Windows - installed python 3.8 and higher
 
-To work with the Twitter API, read the documentation on creating a Twitter App
+To work with the Twitter API, read the documentation on creating a Twitter App(note - making app starts from https://dev.twitter.com)
 
 To activate sending messages in telegram, you need to create a bot via BotFather, add a bot to the telegram channel of the bot and make it an administrator. To find out the telegram ID of the channel, you need to forward a message from the channel to https://t.me/get_myidbot (note - the channel ID starts from -100)
 
