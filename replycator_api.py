@@ -3,6 +3,11 @@ print("Replycator API 0.01")
 import os
 from replycator_modules import replycator_twitter_sender as replytweet
 
+if os.path.isdir('files') == True:
+    pass
+elif os.path.isdir('files') == False:
+    os.mkdir('files')
+
 def delete_files():
     for filename in os.listdir("files/"):
         os.remove("files/" + filename)
