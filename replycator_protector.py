@@ -3,6 +3,14 @@ from replycator_modules import replycator_search_api as replysearch
 from tkinter import PhotoImage
 from threading import Thread
 
+if os.path.isfile('cfg/lang.py') == True:
+    from cfg import lang
+elif os.path.isfile('cfg/lang.py') == False:
+    lang_cfg = open('cfg/lang.py', 'w')
+    lang_cfg.write('lang = "en"')
+    lang_cfg.close()
+    from cfg import lang
+
 des = CTk()
 des.title('Replycator protector')
 des.geometry('400x250')
@@ -15,7 +23,10 @@ bot_thread = Thread(target=bot_start)
 
 def protector():
     if replysearch.protect_rules() == 'Go to create' or replysearch.protect_rules() == 'No supported':
-        replycator_bot_text.configure(text ='Error: not found rules')
+        if lang.lang == 'en':
+            replycator_bot_text.configure(text ='Error: not found rules')
+        if lang.lang == 'ru':
+            replycator_bot_text.configure(text ='Ошибка: не найдены правила')
         des.update()
         des.after(200)
         des.destroy()
@@ -25,7 +36,10 @@ def protector():
 
         if run_rules.twitter_using == True:
             if replysearch.protect_twitter() == 'Go to create' or replysearch.protect_twitter() == 'No supported':
-                replycator_bot_text.configure(text ='Error: not found\n  twitter API file')
+                if lang.lang == 'en':
+                    replycator_bot_text.configure(text ='Ошибка: не найден\n  twitter API файл')
+                if lang.lang == 'ru':
+                    replycator_bot_text.configure(text ='Ошибка: не найден\n  twitter API файл')
                 des.update()
                 des.after(200)
                 des.destroy()
@@ -35,7 +49,10 @@ def protector():
 
         if run_rules.telegram_using == True:
             if replysearch.protect_telegram() == 'Go to create' or replysearch.protect_telegram() == 'No supported':
-                replycator_bot_text.configure(text ='Error: not found\n  telegram API file')
+                if lang.lang == 'en':
+                    replycator_bot_text.configure(text ='Error: not found\n  telegram API file')
+                if lang.lang == 'ru':
+                    replycator_bot_text.configure(text ='Ошибка: не найден\n  telegram API файл')
                 des.update()
                 des.after(200)
                 des.destroy()
@@ -43,7 +60,10 @@ def protector():
         else:
             pass
 
-        replycator_bot_text.configure(text ='Done: getting start \nto Replycator bot')
+        if lang.lang == 'en':
+            replycator_bot_text.configure(text ='Done: getting start \nto Replycator bot')
+        if lang.lang == 'ru':
+            replycator_bot_text.configure(text ='Готово: стартуем \n Replycator бот')
         des.update()
         des.after(500)
         des.destroy()

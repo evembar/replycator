@@ -1,4 +1,4 @@
-print("Replycator API 0.01")
+print("Replycator API 1.00")
 
 import os
 from replycator_modules import replycator_twitter_sender as replytweet
